@@ -1,0 +1,124 @@
+# Room Tablet – dark metal/glass theme matching the room tablet / room panel cards
+# Applies to the more-info dialog, menus, settings pages and the standard HA cards.
+#
+# IMPORTANT: all colors live under "modes: dark:". A theme WITHOUT "modes" always runs
+# Home Assistant in LIGHT mode – the newer HA colors (--ha-color-*, input fields, dialogs,
+# tooltips, tables) then stay light or get dark text, while this theme paints the surfaces
+# dark → dark text on dark background / light on light.
+# With only "dark" defined, HA always switches to dark mode for this theme, regardless of
+# what the device reports. Can be set as default for all users/devices (frontend.set_theme).
+Room Tablet:
+  # Font as in the dashboard (Rajdhani is loaded by the room tablet / room panel cards)
+  primary-font-family: "Rajdhani, 'Segoe UI', Roboto, sans-serif"
+  paper-font-common-base_-_font-family: "Rajdhani, 'Segoe UI', Roboto, sans-serif"
+  mdc-typography-font-family: "Rajdhani, 'Segoe UI', Roboto, sans-serif"
+
+  modes:
+    dark:
+      # Base colors – text contrast ≥ 4.5:1 on all surfaces
+      primary-color: "#ffb347"
+      accent-color: "#4dc3ff"
+      primary-background-color: "#141519"
+      secondary-background-color: "#1d1e22"
+      primary-text-color: "#e6e8ec"
+      secondary-text-color: "#a3a8b0"
+      disabled-text-color: "#71757d"
+      # Text ON the primary color (orange buttons, badges) → dark
+      text-primary-color: "#141519"
+      text-light-primary-color: "#e6e8ec"
+      divider-color: "rgba(255, 255, 255, 0.10)"
+      outline-color: "rgba(255, 255, 255, 0.16)"
+      state-icon-color: "#a3a8b0"
+      sidebar-background-color: "#16171a"
+      sidebar-text-color: "#d2d5da"
+      sidebar-icon-color: "#a3a8b0"
+      sidebar-selected-icon-color: "#ffb347"
+      sidebar-selected-text-color: "#ffb347"
+      app-header-background-color: "#16171a"
+      app-header-text-color: "#e6e8ec"
+      app-header-selection-bar-color: "#ffb347"
+
+      # Cards: metal with a glass sheen
+      card-background-color: "#202126"
+      ha-card-background: "linear-gradient(180deg, rgba(50, 52, 58, 0.78), rgba(24, 25, 29, 0.88))"
+      ha-card-border-radius: "16px"
+      ha-card-border-width: "1px"
+      ha-card-border-color: "rgba(255, 255, 255, 0.07)"
+      ha-card-box-shadow: "0 0 0 1px #000, inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 12px 24px rgba(0, 0, 0, 0.5)"
+      table-row-background-color: "#1d1e22"
+      table-row-alternative-background-color: "#202126"
+      data-table-background-color: "#1d1e22"
+      markdown-code-background-color: "#16171a"
+      code-editor-background-color: "#16171a"
+      codemirror-property: "#4dc3ff"
+      codemirror-comment: "#9aa3ad"
+      codemirror-meta: "#a3a8b0"
+
+      # More-info dialog and other dialogs
+      ha-dialog-surface-background: "linear-gradient(180deg, rgba(46, 48, 54, 0.86), rgba(20, 21, 25, 0.93))"
+      ha-dialog-surface-backdrop-filter: "blur(18px) saturate(1.25)"
+      ha-dialog-scrim-backdrop-filter: "blur(6px)"
+      mdc-dialog-scrim-color: "rgba(0, 0, 0, 0.45)"
+      ha-dialog-border-radius: "20px"
+      dialog-box-shadow: "0 0 0 1px #000, inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 24px 48px rgba(0, 0, 0, 0.65)"
+      ha-dialog-header-title-color: "#e6e8ec"
+      ha-dialog-header-title-font-weight: "700"
+      ha-dialog-header-subtitle-color: "#a3a8b0"
+      mdc-dialog-heading-ink-color: "#e6e8ec"
+      mdc-dialog-content-ink-color: "#d2d5da"
+      mdc-dialog-scroll-divider-color: "rgba(255, 255, 255, 0.10)"
+      # same look when the dialog appears as a bottom sheet on narrow screens
+      ha-bottom-sheet-surface-background: "linear-gradient(180deg, rgba(46, 48, 54, 0.9), rgba(20, 21, 25, 0.95))"
+      ha-bottom-sheet-surface-backdrop-filter: "blur(18px) saturate(1.25)"
+      ha-bottom-sheet-scrim-backdrop-filter: "blur(6px)"
+      ha-bottom-sheet-scrim-color: "rgba(0, 0, 0, 0.45)"
+      ha-bottom-sheet-handle-color: "#4a4d54"
+
+      # Inputs, switches, sliders
+      input-fill-color: "rgba(0, 0, 0, 0.3)"
+      input-disabled-fill-color: "rgba(0, 0, 0, 0.2)"
+      input-ink-color: "#e6e8ec"
+      input-label-ink-color: "#a3a8b0"
+      input-disabled-ink-color: "#71757d"
+      input-idle-line-color: "rgba(255, 255, 255, 0.18)"
+      input-hover-line-color: "rgba(255, 255, 255, 0.35)"
+      input-outlined-idle-border-color: "rgba(255, 255, 255, 0.18)"
+      input-outlined-hover-border-color: "rgba(255, 255, 255, 0.35)"
+      input-dropdown-icon-color: "#a3a8b0"
+      switch-checked-color: "#ffb347"
+      switch-checked-button-color: "#ffb347"
+      switch-checked-track-color: "#6b4a1f"
+      switch-unchecked-button-color: "#a3a8b0"
+      switch-unchecked-track-color: "#2a2b2f"
+      slider-color: "#ffb347"
+      slider-bar-color: "#2a2b2f"
+      mdc-theme-primary: "#ffb347"
+      mdc-theme-on-primary: "#141519"
+      mdc-theme-secondary: "#4dc3ff"
+      mdc-theme-on-secondary: "#141519"
+      mdc-theme-surface: "#1d1e22"
+      mdc-theme-on-surface: "#e6e8ec"
+      mdc-theme-text-primary-on-background: "#e6e8ec"
+      mdc-theme-text-secondary-on-background: "#a3a8b0"
+      mdc-theme-text-hint-on-background: "#a3a8b0"
+      mdc-theme-text-icon-on-background: "#a3a8b0"
+      mdc-select-fill-color: "rgba(0, 0, 0, 0.3)"
+      mdc-select-ink-color: "#e6e8ec"
+      mdc-select-label-ink-color: "#a3a8b0"
+      mdc-select-dropdown-icon-color: "#a3a8b0"
+      mdc-text-field-fill-color: "rgba(0, 0, 0, 0.3)"
+      mdc-text-field-ink-color: "#e6e8ec"
+      mdc-text-field-label-ink-color: "#a3a8b0"
+
+      # State colors (LED accents as in the dashboard)
+      state-on-color: "#ffb347"
+      state-active-color: "#ffb347"
+      state-light-active-color: "#ffb347"
+      state-climate-heat-color: "#ff8a4c"
+      state-climate-cool-color: "#4da3ff"
+      state-binary_sensor-active-color: "#ff5a5a"
+      success-color: "#3ddc84"
+      warning-color: "#ffb347"
+      error-color: "#ff6b6b"
+      info-color: "#4dc3ff"
+      history-unavailable-color: "#3a3c41"
