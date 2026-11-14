@@ -1,5 +1,17 @@
 # Room Tablet Theme
 
+![Room Tablet Theme preview](docs/images/preview.png)
+
+*Theme preview (mock-up): a static page using the colors from `themes/room_tablet.yaml`, not a real Home Assistant screenshot.*
+
+<details><summary>More screenshots</summary>
+
+**More-info dialog (mock-up)**
+
+![Room Tablet Theme – More-info dialog (mock-up)](docs/images/dialog.png)
+
+</details>
+
 A dark metal/glass theme for Home Assistant that matches the
 [room_panel_ha_card](https://github.com/SysriX/room_panel_ha_card) and
 [room_tablet_ha_card](https://github.com/SysriX/room_tablet_ha_card) wall-tablet dashboards. It styles the
